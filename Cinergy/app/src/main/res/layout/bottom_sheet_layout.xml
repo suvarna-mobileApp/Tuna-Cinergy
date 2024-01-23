@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp10"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/dp10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cancel"
+            android:padding="@dimen/dp10"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_poster"
+            android:layout_width="@dimen/dp200"
+            android:layout_marginTop="@dimen/dp24"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_title"
+            style="@style/TextAppearance.Cinergy.Subtitle1"
+            android:layout_toRightOf="@+id/img_poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp24"
+            android:padding="@dimen/dp10"
+            android:text=""
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp4"
+            android:layout_toRightOf="@+id/img_poster"
+            android:layout_below="@+id/txt_title"
+            android:layout_marginTop="@dimen/dp4"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_time"
+                style="@style/TextAppearance.Cinergy.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="left"
+                android:text=""
+                android:drawableLeft="@drawable/icon_calender"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_member"
+                style="@style/TextAppearance.Cinergy.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp2"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="left"
+                android:text=""
+                android:drawableLeft="@drawable/icon_user"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_content"
+            style="@style/TextAppearance.Cinergy.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:layout_toRightOf="@+id/img_poster"
+            android:layout_below="@+id/lin"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="left"
+            android:text=" "
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_1"
+            style="@style/TextAppearance.Cinergy.Caption"
+            android:layout_width="@dimen/dp200"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_content"
+            android:gravity="center"
+            android:text="@string/bottom_txt1"
+            android:background="@drawable/button"
+            android:layout_marginTop="@dimen/dp18"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_more"
+            style="@style/TextAppearance.Cinergy.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_content"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="@dimen/dp2"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_marginEnd="@dimen/dp18"
+            android:text="@string/bottom_txt2"
+            android:drawableTop="@drawable/icon_info"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

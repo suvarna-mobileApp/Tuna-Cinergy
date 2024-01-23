@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movieinfo.MovieInfoActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_back"
+        style="@style/TextAppearance.Cinergy.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="left"
+        android:text="@string/dash_txt1"
+        android:layout_marginLeft="@dimen/dp10"
+        android:drawableLeft="@drawable/icon_back"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_location"
+        style="@style/TextAppearance.Cinergy.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="end"
+        android:text="@string/dash_txt2"
+        android:drawableStart="@drawable/icon_location"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/nestScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp24">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_poster"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_title"
+                style="@style/TextAppearance.Cinergy.Subtitle1"
+                android:layout_toRightOf="@+id/img_poster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_runtime"
+                style="@style/TextAppearance.Cinergy.Body"
+                android:layout_toRightOf="@+id/img_poster"
+                android:layout_below="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_choose"
+            style="@style/TextAppearance.Cinergy.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp4"
+            android:text="Choose Date"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rel"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@color/light_gray"
+            android:layout_margin="@dimen/dp24"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_choose"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_time"
+            style="@style/TextAppearance.Cinergy.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="Choose Time"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dp4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_date"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp24"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_time"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_1"
+        style="@style/TextAppearance.Cinergy.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Continue"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

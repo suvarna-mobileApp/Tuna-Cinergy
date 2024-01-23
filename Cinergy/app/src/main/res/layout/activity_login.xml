@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/dp10"
+    tools:context=".ui.login.LoginActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_welcome"
+        style="@style/TextAppearance.Cinergy.Headline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_text10"
+        android:textColor="@color/green"
+        android:layout_marginLeft="@dimen/dp10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_content"
+        style="@style/TextAppearance.Cinergy.Subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/login_text1"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_welcome" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_content_1"
+        style="@style/TextAppearance.Cinergy.Headline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/login_text2"
+        android:layout_marginLeft="@dimen/dp10"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_content" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_subtitle"
+        style="@style/TextAppearance.Cinergy.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="left"
+        android:text="@string/login_text3"
+        android:layout_marginLeft="@dimen/dp10"
+        android:drawableLeft="@drawable/icon_star"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_content_1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_subtitle_1"
+        style="@style/TextAppearance.Cinergy.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_star"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="left"
+        android:text="@string/login_text4"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_subtitle_2"
+        style="@style/TextAppearance.Cinergy.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/login_text5"
+        android:layout_marginTop="@dimen/dp10"
+        android:drawableLeft="@drawable/icon_star"
+        android:layout_marginLeft="@dimen/dp10"
+        android:drawablePadding="@dimen/dp10"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitle_1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_subtitle_3"
+        style="@style/TextAppearance.Cinergy.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/login_text6"
+        android:layout_marginTop="@dimen/dp10"
+        android:drawableLeft="@drawable/icon_star"
+        android:layout_marginLeft="@dimen/dp10"
+        android:drawablePadding="@dimen/dp10"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitle_2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_1"
+        style="@style/TextAppearance.Cinergy.Caption"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login_text7"
+        android:background="@drawable/button"
+        android:layout_marginTop="@dimen/dp40"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitle_3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_2"
+        style="@style/TextAppearance.Cinergy.Caption"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login_text8"
+        android:layout_marginTop="@dimen/dp24"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_3"
+        style="@style/TextAppearance.Cinergy.Caption"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/button"
+        android:text="@string/login_text9"
+        android:layout_marginTop="@dimen/dp24"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

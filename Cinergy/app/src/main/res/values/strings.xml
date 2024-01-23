@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cinergy</string>
+    <string name="login_text1">Join The Magic</string>
+    <string name="login_text2">Be Cinergy ELITE!</string>
+    <string name="login_text3">Enjoy a free popcorn on sign up.</string>
+    <string name="login_text4">Enjoy a $5.00 Elite reward after 300 points \nto spend however we want.</string>
+    <string name="login_text5">Enjoy special birthday movie ticket offers.</string>
+    <string name="login_text6">Enjoy exclusive content,sneak peaks and special offers.</string>
+    <string name="login_text7">Sign In Now</string>
+    <string name="login_text8">Sign Up</string>
+    <string name="login_text9">Continue As Guest</string>
+    <string name="login_text10">ELITE</string>
+    <string name="network">No Network Connection</string>
+    <string name="dash_txt1">Back</string>
+    <string name="dash_txt2">Tulsa, OK</string>
+    <string name="dash_txt3">Escape Rooms</string>
+    <string name="dash_txt4">Cinergy</string>
+    <string name="dash_txt5">Cinergy</string>
+    <string name="bottom_txt1">Book Now</string>
+    <string name="bottom_txt2">More</string>
+</resources>

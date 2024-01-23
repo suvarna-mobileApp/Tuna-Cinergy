@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.cinergy.CircularProgressIndicator" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="android:indeterminate">true</item>
+        <item name="indicatorColor">@color/secondary</item>
+        <item name="android:max">100</item>
+        <item name="android:elevation">@dimen/dp4</item>
+    </style>
+</resources>
